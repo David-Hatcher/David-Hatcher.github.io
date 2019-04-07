@@ -1,3 +1,4 @@
 name: David Hatcher
 markdown: kramdown
+encoding: UTF-8
 permalink: /blog/:year/:month/:day/:title
