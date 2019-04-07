@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "David Hatcher, Launches Site"
+title: Site Launch - Blog | David Hatcher
 date: 2019-04-06 
 ---
 

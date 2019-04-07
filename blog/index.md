@@ -1,6 +1,6 @@
 ---
 layout: default
-title: David Hatchers's Blog
+title: Blog | David Hatcher
 ---
 <ul>
     {% for post in site.posts %}

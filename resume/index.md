@@ -1,6 +1,6 @@
 ---
 layout: default
-title: David Hatcher
+title: Resume | David Hatcher
 ---
 #**DAVID M. HATCHER**
 

@@ -1,4 +1,4 @@
 ---
 layout: default
-title: David Hatchers's Blog
+title: About | David Hatcher
 ---
