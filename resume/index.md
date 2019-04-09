@@ -9,7 +9,9 @@ PHONE (863)333-8029
 EMAIL [DHATCHER1@MAIL.USF.EDU](mailto:DHATCHER1@MAIL.USF.EDU)
 
 ## OBJECTIVE
+
 ___
+
 To obtain an internship in the computer science field.
 
 ## EDUCATION
