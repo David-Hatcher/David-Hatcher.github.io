@@ -2,7 +2,7 @@
 layout: default
 title: Resume | David Hatcher
 ---
-<center># David M. Hatcher
+# David M. Hatcher
 
 6204 PICCADILLY CT APT 263 TAMPA, FL 33614
 PHONE (863)333-8029
@@ -43,4 +43,3 @@ _Warehouse Lead 2_
 ##Skills
 ___
 Languages: Beginning knowledge of Matlab, Good understanding of Python and C#.
-</center>
