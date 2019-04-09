@@ -8,11 +8,11 @@ title: Resume | David Hatcher
 PHONE (863)333-8029
 EMAIL [DHATCHER1@MAIL.USF.EDU](mailto:DHATCHER1@MAIL.USF.EDU)
 
-##OBJECTIVE
+## OBJECTIVE
 ___
 To obtain an internship in the computer science field.
 
-##EDUCATION
+## EDUCATION
 
 ___
 
@@ -31,7 +31,7 @@ August 2016 - December 2017
 
 SPC GPA: 3.51
 
-##EXPERIENCE
+## EXPERIENCE
 
 ___
 
@@ -57,7 +57,7 @@ _Warehouse Lead 2_
 * Responsible for accurately receiving and shipping $24 million of retail product to 14 in park locations and 7 LEGOLAND Discovery Centers located throughout North America.
 * Member of company safety committee.
 
-##Skills
+## Skills
 
 ___
 
