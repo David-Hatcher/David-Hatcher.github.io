@@ -19,8 +19,8 @@ window.onload = function () {
 		var logoTitleContainer = l.text(0, '98%', '');
 		var possible = "-+*/|}{[]~\\\":;?/.><=+-_)(*&^%$#@!)}";
 		logoTitleContainer.attr({
-			fontSize: 140,
-			fontFamily: 'Dosis',
+			fontSize: 180,
+			//fontFamily: 'Dosis',
 			fontWeight: '600'
 		});
 
