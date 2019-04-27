@@ -1,35 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>	
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
-	<script type="text/javascript" src="/assets/js/site.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js"></script>
-    {% include analytics.html %}
-</head>
+<html lang="en">
+        {% include head.html %}  
 <body>
-	<svg xmlns="http://www.w3.org/2000/svg" id="logo" viewBox="0 0 1252 135" width="350px">
-		<path fill="none" d="" />
-	</svg>
-	<nav>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/about">About</a></li>
-			<li><a href="/resume">Resume</a></li>
-			<li><a href="/blog">Blog</a></li>
-		</ul>
-	</nav>
-	<div class="container">
-
-		{{ content }}
-
+	<div class="container-fluid">
+		<nav class="fixed-top">
+				<ul class="nav justify-content-end">
+					<li class="nav-item">
+						{% if page.dir == "/" %}
+							<a class="nav-link active" href="/">Home</a>
+						{% else %}
+							<a class="nav-link" href="/">Home</a>
+						{% endif %}
+					</li>
+					<li class="nav-item">
+						{% if page.dir == "/about/" %}
+							<a class="nav-link active" href="/about">About</a>
+						{% else %}
+							<a class="nav-link" href="/about">About</a>
+						{% endif %}
+					</li>
+					<li class="nav-item">
+						{% if page.dir == "/resume/" %}
+							<a class="nav-link active" href="/resume">Resume</a>
+						{% else %}
+							<a class="nav-link" href="/resume">Resume</a>
+						{% endif %}
+					</li>
+					<li class="nav-item">
+						{% if page.dir == "/blog/" %}
+							<a class="nav-link active" href="/blog">Blog</a>
+						{% else %}
+							<a class="nav-link" href="/blog">Blog</a>
+						{% endif %}
+					</li>
+				</ul>
+		</nav>
+		<div class="row bio-image">
+			<div class="col-sm text-center">
+				<img src ="/images/Headshot.png" class="img-fluid" />
+			</div>
+		</div>
+		<div class="row name-logo">
+			<div class="col text-center">
+				<svg xmlns="http://www.w3.org/2000/svg" id="logo" viewBox="0 0 1252 135" width="350px">
+					<path fill="none" d="" />
+				</svg>
+			</div>
+		</div>
+		<div class="row content-container">
+			<div class="col-sm-4 offset-sm-4">
+					{{ content }}
+			</div>
+		</div>
+		{% include footer.html %}  
 	</div>
-	<footer>
-		<ul style="text-align: right;">
-			<li><a href="mailto:david.milton.hatcher@gmail.com"><i class="far fa-envelope fa-3x"></i></a></li>
-			<li><a href="https://github.com/david-hatcher"><i class="fab fa-github-alt fa-3x"></i></a></li>
-		</ul>
-	</footer>
 </body>
 </html>
