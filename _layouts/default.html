@@ -3,38 +3,7 @@
         {% include head.html %}  
 <body>
 	<div class="container-fluid">
-		<nav class="fixed-top">
-				<ul class="nav justify-content-end">
-					<li class="nav-item">
-						{% if page.dir == "/" %}
-							<a class="nav-link active" href="/">Home</a>
-						{% else %}
-							<a class="nav-link" href="/">Home</a>
-						{% endif %}
-					</li>
-					<li class="nav-item">
-						{% if page.dir == "/about/" %}
-							<a class="nav-link active" href="/about">About</a>
-						{% else %}
-							<a class="nav-link" href="/about">About</a>
-						{% endif %}
-					</li>
-					<li class="nav-item">
-						{% if page.dir == "/resume/" %}
-							<a class="nav-link active" href="/resume">Resume</a>
-						{% else %}
-							<a class="nav-link" href="/resume">Resume</a>
-						{% endif %}
-					</li>
-					<li class="nav-item">
-						{% if page.dir == "/blog/" %}
-							<a class="nav-link active" href="/blog">Blog</a>
-						{% else %}
-							<a class="nav-link" href="/blog">Blog</a>
-						{% endif %}
-					</li>
-				</ul>
-		</nav>
+		{% include nav.html %}
 		<div class="row bio-image">
 			<div class="col-sm text-center">
 				<img src ="/images/Headshot.png" class="img-fluid" />
@@ -42,16 +11,33 @@
 		</div>
 		<div class="row name-logo">
 			<div class="col text-center">
-				<svg xmlns="http://www.w3.org/2000/svg" id="logo" viewBox="0 0 1252 135" width="350px">
-					<path fill="none" d="" />
-				</svg>
+				<h1 id="name"></h1>
 			</div>
 		</div>
-		<div class="row content-container">
-			<div class="col-sm-4 offset-sm-4">
-					{{ content }}
-			</div>
+		<div class="row titles-logo">
+			<div class="col text-center" id="titles"></div>
 		</div>
+		<section id="intro">
+			<div class="row content-container">
+				<div class="col-sm-4 offset-sm-4">
+						{{ content }}
+				</div>
+			</div>
+		</section>
+		<section id="about">
+			<div class="row content-container">
+				<div class="col-sm-4 offset-sm-4">
+					{% include about.html %}
+				</div>
+			</div>
+		</section>
+		<section id="blog">
+			<div class="row content-container">
+				<div class="col-sm-4 offset-sm-4">
+					{% include blog.html %}
+				</div>
+			</div>
+		</section>
 		{% include footer.html %}  
 	</div>
 </body>

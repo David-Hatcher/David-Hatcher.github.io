@@ -103,7 +103,32 @@ a {
     }
 }
 
+@media (max-width: 991px) {
+    #navbarNav {
+        background: white;
+    }
+}
+
 
 footer {
     background-color: white;
+}
+
+#intro {
+    height: 100vh;
+}
+
+#about {
+    padding: 90px 0 75px;
+    background: #f2f2f2;
+}
+
+h2{
+    padding-bottom: 50px;
+}
+
+
+#contact-icons {
+    padding-top: 50px;
+    padding-inline-start: 0;
 }
