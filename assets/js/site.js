@@ -60,15 +60,95 @@ new TypeIt('#name', {
 	speed: 50,
 	waitUntilVisible: true
 }).go();
-setTimeout(function() {
-	new TypeIt('#titles', {
-		strings: ['Student','Junior Developer','Creator','Problem Solver'],
-		breakLines: false,
-		cursor: false,
-		lifelike:true,
-		speed: 100,
-		waitUntilVisible: true,
-		loop:true,
-	}).go();
+// setTimeout(function() {
+// 	new TypeIt('#titles', {
+// 		strings: ['Student','Junior Developer','Creator','Problem Solver'],
+// 		breakLines: false,
+// 		cursor: false,
+// 		lifelike:true,
+// 		speed: 100,
+// 		waitUntilVisible: true,
+// 		loop:true,
+// 	}).go();
 	
-}, 2000);
+// }, 2000);
+
+var titles = ["Student","Junior Developer","Creator","Problem Solver"];
+
+feedtitles();
+
+function titlesSequence(title){
+  var currentTitle = title;
+	for (var j = 0; j <= currentTitle.length +1; j++){
+		var titleRandom = currentTitle.substr(0,j)
+		for (var k = j ; k <= currentTitle.length; k++){				
+			titleRandom += '█';				
+		}
+		setData(titleRandom,"titles",j);
+		titleRandom="";			
+	}
+}
+
+function titleClear(title){
+	debugger;
+	for (var i = title.length; i >= 0; i--){
+		var titleNotRandom = title.substr(0,i)
+  	for (var j = i; j < title.length; j++){
+      titleNotRandom += '█';
+    }
+    setDataReverse(titleNotRandom,"titles",i);
+    titleNotRandom = "";
+	}
+
+}
+function feedtitles(){
+	//var iteration = 0;
+	titlesSequence(titles[0]);
+	setInterval(function() {    
+		//iteration += 1;
+    var title = titles[0];
+    debugger;
+    titleClear(title);
+    setTimeout(function() {
+			titlesSequence(title)    
+    },title.length*200);
+	}, 5000);
+}
+
+function setDataReverse(data,dataspace,i){
+	var timeStart = data.length;
+	setTimeout(function() {
+		document.getElementById(dataspace).innerHTML = data;
+	}, (timeStart -i)*200);
+}
+
+function setData(data,dataspace,i){
+	setTimeout(function() {
+		document.getElementById(dataspace).innerHTML = data;
+	}, i*100);
+}
+// 			for (var i = 0; i < logoTitle.length + 1; i++) {
+// 			logoRandom = logoTitle.substr(0, i);
+// 				for (var j = i; j < logoTitle.length; j++) {
+// 					logoRandom += possible.charAt(Math.floor(Math.random() * possible.length));				
+// 				}
+// 			generateRandomTitle(i, logoRandom);
+// 			logoRandom = '';
+// 		}
+// }
+
+
+
+// var example = ['A', 'B', 'C', 'D'];
+// textSequence(0);
+// function textSequence(i){
+// 	if (example.length > i){
+// 		setTimeout(function() {
+// 			document.getElementById("sequence").innerHTML = example[i];
+// 			textSequence(++i);
+// 		},1000);
+// 	} else if (example.length == i){
+// 		textSequence(0);
+// 	}
+	
+// }
