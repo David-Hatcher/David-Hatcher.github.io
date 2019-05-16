@@ -12,10 +12,10 @@ This application was to determine the factorial of a number 0-20 and must includ
 
 The next hurdle I encountered was just how restrictive Java can be, especially when in regards to the class names, as the class name inside the file and the name of the .Java file must be identical. Something else that I noticed was how you take user input, with C# I've become very used to just using <b>``` Console.ReadLine()```</b> to receive user input. But interestingly, with Java, you have to import the Scanner class and then instantiate it to be able to use it in your code. 
 
-![alt text](ScannerClassInstantiation.png "Scanner Class Instantiation")
+![alt text](ScannerClassInstantiation.PNG "Scanner Class Instantiation")
 
 The error handling ending up being another challenge as it was not something that was contained in the sample code we were given. From what I found it seems that determining if a users input is an integer rather than a double or a string is a bit convoluted in Java. This may just be due to so much information being available for Java as it's been out for over 20 years now, that most of the information I was able to locate is probably outdated. Most likely I could find a more eloquent way of determining the class of the input, but in the end I just used a try/catch block to pull the information in from the user.
 
-![alt text](TryCatchBlock.png "Error Handling Solution")
+![alt text](TryCatchBlock.PNG "Error Handling Solution")
 
 Overall, I found this to be a very interesting first assignment. However, I have to wonder if this was too hard of an initial assignment, as this is a class for people just starting out in their Computer Science curriculum and quite possibly with no experience coding whatsoever. This really makes me understand how some people can get very discouraged when trying to go into the field and take classes at an actual college, rather than a coding bootcamp, and it seems less like a learning curve and more like a learning wall.
