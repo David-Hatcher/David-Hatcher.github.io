@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2ef96a99.css",
+    "main.js": "/static/js/main.c539f486.js",
+    "static/js/787.633816a4.chunk.js": "/static/js/787.633816a4.chunk.js",
+    "static/media/KanBanBoard.png": "/static/media/KanBanBoard.ce67914092e667b96594.png",
+    "static/media/Headshot.png": "/static/media/Headshot.3bcf6bde684ab7bdfa6f.png",
+    "static/media/DataVis.png": "/static/media/DataVis.7b1444b48b306a975294.png",
+    "static/media/FinalCalc.png": "/static/media/FinalCalc.0b82aef6b4b0d7bd6fe6.png",
+    "static/media/WordleSolver.png": "/static/media/WordleSolver.09e31a44756e191e8d5f.png",
+    "index.html": "/index.html",
+    "main.2ef96a99.css.map": "/static/css/main.2ef96a99.css.map",
+    "main.c539f486.js.map": "/static/js/main.c539f486.js.map",
+    "787.633816a4.chunk.js.map": "/static/js/787.633816a4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ef96a99.css",
+    "static/js/main.c539f486.js"
+  ]
+}
